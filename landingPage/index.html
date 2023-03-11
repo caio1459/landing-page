@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="cab" onmousemove="entrar()" onmouseout="sair()">
+            <h2>Programação</h2>
+            <h2>Para Treino</h2>
+        </div>
+        <nav>
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Serviços</li></a>
+                <a href="#"><li>Sobre</li></a>
+                <a href="#"><li>Contato</li></a>
+                <a href="#" id="borda"><li>Já tem uma conta?</li></a>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <aside>
+                <span><h1>Segue aí meu nobre</h1></span>
+                <h1>Não vai se arrepender</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Maxime necessitatibus veniam quae natus labore, iure iusto nisi laborum nihil sapiente, 
+                accusamus asperiores quasi impedit voluptatem tenetur commodi, odio consectetur! Cum!
+            </p>
+            <form>
+                <input type="text" id="txtn" placeholder="Nome">
+                <input type="email" id="txte" placeholder="E-mail">
+                <input type="button" value="Enviar >" id="env" onclick="enviar()">
+            </form>
+        </aside>
+        <article>
+            <img src="images/zeem.png" alt="Mulher Meditando">
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
