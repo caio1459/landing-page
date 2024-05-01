@@ -1,0 +1,27 @@
+@if (isVisible) {
+  <section class="form-section">
+    <div class="text">
+      <h3>Fique por dentro das tendências</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugiat a soluta velit ullam. Ducimus sapiente,
+        repellat cumque hic numquam quod incidunt perferendis pariatur. Illum dolore corrupti aperiam neque harum?
+      </p>
+    </div>
+    <form [formGroup]="formGroup">
+      <label for="name">Nome</label>
+      <input id="name" type="text" formControlName="name" />
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" />
+      <app-btn-primary
+        variant="secundary"
+        text="Se Inscreva"
+        (onSubmit)="submit()"
+        [disabled]="!formGroup.valid"
+        [loading]="loading()"
+      />
+    </form>
+    @if (message) {
+      <h1>{{message.message}}</h1>
+    }
+  </section>
+}

@@ -1,0 +1,27 @@
+<app-header></app-header>
+<main>
+  <section class="main-section p-70">
+    <div class="hedline">
+      <span>Kipper consultoria</span>
+      <h1>A consultoria que você busca para seu software</h1>
+    </div>
+    <img ngSrc="/assets/images/main.png" priority width="670" height="535" />
+  </section>
+  <section class="benefic-section p-70">
+    <div class="benefic-data">
+      <h2>
+        95% das <br>
+        empresas
+      </h2>
+    </div>
+    <p>Não sabem como lidar com problemas de <b>escalibilidade</b> e grande volume de requisições.</p>
+  </section>
+  <section class="cta-section">
+    <app-btn-primary
+      [disabled]="disabled"
+      text="Fale com nossos Especialistas"
+      variant="primary"
+      (onSubmit)="setVisible()" />
+  </section>
+  <app-form [isVisible]="isVisible" />
+</main>
